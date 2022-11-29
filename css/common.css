@@ -24,6 +24,8 @@
     opacity: 1;
     border-radius: 10px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
   }
   .page-title {
     margin-top: 16px;

@@ -17,6 +17,7 @@
 .address-container{
   padding: 32px;
   height: fit-content;
+  flex-grow: 1;
 }
 .address-label {
   font-family: Inter;
