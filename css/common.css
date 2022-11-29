@@ -108,3 +108,32 @@
     opacity: 1;
     text-align: right;
   }
+
+
+
+
+.buttons{
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.button{
+  width: 103px;
+  height: 25px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 11px;
+  border-radius: 2px;
+  padding:auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bt-pagamento {
+  background: rgba(178,209,255,1);
+}
+
+.bt-retornar {
+  background: rgba(255,178,178,1);
+}
