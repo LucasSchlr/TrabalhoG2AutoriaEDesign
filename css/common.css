@@ -1,141 +1,121 @@
 * {
-    box-sizing: border-box;
-  }
-  html, body {
-    height: 100%;
-  }
-  body {
-    font-size: 14px;  
-  }
-  .page-container {
-    width: 100%;
-    height: 100%;
-    background: rgba(217,217,217,1);
-    opacity: 1;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-  }
-  .content-container {
-    margin-top: 48px;
-    width: 1000px;
-    height: 700px;
-    background: rgba(255,255,255,1);
-    opacity: 1;
-    border-radius: 10px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-  }
-  .page-title {
-    margin-top: 16px;
-    width: 100%;
-    color: rgba(0,0,0,1);
-    font-family: Inter;
-    font-size: 24px;  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-
-.sugestions-label {
-    width: 100px;
-    font-family: Inter;
-    font-weight: Regular;
-    font-size: 12px;
-    opacity: 1;
-    text-align: left;
-    margin-bottom: 8px;
-  }
-  .other-sugestions{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .sugestions-list{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
-  }
-  .sugestion-container {
-    width: 70px;
-    height: 132px;
-    background: rgba(255,255,255,1);
-    border: 0.5px solid rgba(143,142,142,1);
-    border-radius: 3px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 3px;
-  }
-  .sugestion-image {
-    width: 57px;
-    height: 101px;
-    opacity: 1;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-  }
-  .sugestion-price-container{
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  
-  .sugestion-name {
-    width: 54px;
-    color: rgba(0,0,0,1);
-    font-family: Inter;
-    font-weight: Regular;
-    font-size: 8px;
-    opacity: 1;
-    text-align: left;
-  }
-  .sugestion-price-label {
-    width: auto;
-    color: rgba(0,0,0,1);
-    font-family: Inter;
-    font-weight: Regular;
-    font-size: 6px;
-    opacity: 1;
-  }
-  .sugestion-price {
-    width: 26px;
-    color: rgba(0,0,0,1);
-    font-family: Inter;
-    font-weight: Regular;
-    font-size: 8px;
-    opacity: 1;
-    text-align: right;
-  }
-
-
-
-
-.buttons{
-  display: flex;
-  justify-content: space-between;
-  padding: 16px;
+  box-sizing: border-box;
 }
-
-.button{
-  width: 103px;
-  height: 25px;
+html,
+body {
+  height: 100%;
+}
+body {
+  font-size: 14px;
+}
+.page-container {
+  width: 100%;
+  height: 100%;
+  background: rgba(217, 217, 217, 1);
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+}
+.content-container {
+  width: 1300px;
+  height: fit-content;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+.page-title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  color: rgba(0, 0, 0, 1);
   font-family: Inter;
-  font-weight: Regular;
-  font-size: 11px;
-  border-radius: 2px;
-  padding:auto;
+  font-size: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.bt-pagamento {
-  background: rgba(178,209,255,1);
+
+.sugestions-label {
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+  margin-bottom: 8px;
+}
+.other-sugestions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sugestions-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.sugestion-container {
+  width: 140px;
+  height: 230px;
+  background: rgba(255, 255, 255, 1);
+  border: 0.5px solid rgba(143, 142, 142, 1);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3px;
+  cursor: pointer
+}
+.sugestion-image {
+  width: 110px;
+  height: 1550px;
+  opacity: 1;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  margin-top: 3px;
+}
+.sugestion-price-container {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
-.bt-retornar {
-  background: rgba(255,178,178,1);
+.sugestion-name {
+  color: rgba(0, 0, 0, 1);
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 10px;
+  opacity: 1;
+  text-align: left;
+  margin-top: 3px;
+}
+.sugestion-price-label {
+  width: auto;
+  color: rgba(0, 0, 0, 1);
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 10px;
+  opacity: 1;
+}
+.sugestion-price {
+  color: rgba(0, 0, 0, 1);
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 12px;
+  opacity: 1;
+  text-align: right;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px;
 }

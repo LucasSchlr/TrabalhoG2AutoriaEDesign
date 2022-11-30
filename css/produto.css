@@ -38,11 +38,12 @@ body {
 .product-info{
   display: flex;
   flex-direction: row;
+  flex-grow: 1;
   padding: 16px;
 }
 .image-product {
-  width: 142px;
-  height: 255px;
+  width: 200px;
+  height: 335px;  
 }
 .product-details{
   margin-left: 16px;
@@ -51,7 +52,7 @@ body {
   justify-content: space-between;
 }
 .product-name {
-  width: 203px;
+  width: fit-content;
   color: rgba(0,0,0,1);
   font-family: Inter;
   font-weight: Regular;
@@ -60,11 +61,11 @@ body {
   text-align: left;
 }
 .product-description {
-  width: 358px;
+  width: fit-content;
   color: rgba(0,0,0,1);
   font-family: Inter;
   font-weight: Regular;
-  font-size: 9px;
+  font-size: 14px;
   opacity: 1;
   text-align: justify;
 }
@@ -73,7 +74,6 @@ body {
 }
 .label {
   vertical-align: top;
-  width: 58px;
   font-family: Inter;
   font-weight: Regular;
   font-size: 18px;
